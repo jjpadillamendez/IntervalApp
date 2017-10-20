@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="func_spinnerItems">
+        <item>- Select a Function -</item>
+        <item>  Test   </item>
+    </string-array>
+
+    <string-array name="phi_spinnerItems">
+        <item>- Select a Phi -</item>
+    </string-array>
+
+</resources>
