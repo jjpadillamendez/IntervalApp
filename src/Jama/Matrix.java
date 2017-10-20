@@ -1,4 +1,4 @@
-package com.example.jesus.myapplication.Jama;
+package Jama;
 
 import java.text.NumberFormat;
 import java.text.DecimalFormat;

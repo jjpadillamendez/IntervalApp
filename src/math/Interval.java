@@ -1,4 +1,4 @@
-package com.example.jesus.myapplication.math;
+package math;
 
 public class Interval {
 	

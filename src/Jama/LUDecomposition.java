@@ -1,4 +1,4 @@
-package com.example.jesus.myapplication.Jama;
+package Jama;
 
    /** LU Decomposition.
    <P>

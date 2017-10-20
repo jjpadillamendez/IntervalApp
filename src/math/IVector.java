@@ -1,4 +1,4 @@
-package com.example.jesus.myapplication.math;
+package math;
 
 public class IVector {
 
@@ -25,13 +25,13 @@ private Interval vector[];
 		return output;
 		
 	}
-	public IVector midpoint() {
+	public double[] midpoint() {
 		// think about efficiency
-		IVector midVector = new IVector(this.vector.length);
-		for(int i=0; i < this.vector.length; i++){
-			midVector.set(i, new Interval(this.vector[i].midpoint(),this.vector[i].midpoint()));
+		double midv[] = new double[this.vector.length];
+		for(int i=0; i < midv.length; i++){
+			midv[i] = this.vector[i].midpoint();
 		}
-		return midVector;
+		return midv;
 		
 	}
 	

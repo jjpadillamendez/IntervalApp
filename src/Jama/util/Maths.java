@@ -1,4 +1,4 @@
-package com.example.jesus.myapplication.Jama.util;
+package Jama.util;
 
 public class Maths {
 

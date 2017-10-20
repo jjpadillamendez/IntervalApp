@@ -1,14 +1,20 @@
-package com.example.jesus.myapplication.math;
+package math;
 
 import Jama.Matrix;
 
 public class GaussSeidel {
 	public static IVector solve(IMatrix A, IVector b, IVector p) {
-		Matrix invA0 = A.midMatrix().inverse();
-		IMatrix A_prime = IMath.mult(invA0, A);
-		IVector b_prime = IMath.mult(invA0, b);
-		
-		return step(A_prime, b_prime, p);
+		IVector retVal;
+		try {
+			Matrix invA0 = A.midMatrix().inverse();
+			IMatrix A_prime = IMath.mult(invA0, A);
+			IVector b_prime = IMath.mult(invA0, b);
+			retVal = step(A_prime, b_prime, p);
+		}
+		catch(java.lang.RuntimeException e) {
+			retVal = null;
+		}		
+		return retVal;
 
 	}
 	private static IVector step(IMatrix A, IVector b, IVector p){

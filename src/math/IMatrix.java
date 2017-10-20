@@ -1,4 +1,4 @@
-package com.example.jesus.myapplication.math;
+package math;
 
 import Jama.Matrix;
 
@@ -69,5 +69,16 @@ public class IMatrix {
 		return matrix;
 		
 	}
+	public IMatrix traspose() {
+		int n=matrix.length; int m=matrix[0].length;
+		IMatrix ma = new IMatrix(m, n);
+		for(int i=0; i < n; i++) {
+			for(int j=0; j < m; j++) {
+				ma.set(j,i, new Interval(this.matrix[i][j].inf(), this.matrix[i][j].sup()));
+			}
+		}
+		return ma;
+	}
+	
 	
 }
